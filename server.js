@@ -4,7 +4,7 @@ const serveStatic  = require('serve-static');
 const logger       = require('morgan');
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
-const sass         = require('node-sass'), // We're adding the node-sass module
+const sass         = require('node-sass'); // We're adding the node-sass module
 
 
 // Database
