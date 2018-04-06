@@ -4,7 +4,7 @@ const serveStatic  = require('serve-static');
 const logger       = require('morgan');
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
-const sass         = require('node-sass'); // We're adding the node-sass module
+// const sass         = require('node-sass'); // We're adding the node-sass module
 
 
 // Database
@@ -20,13 +20,13 @@ const db          = monk(mongoUri)
 let app = express();
 
 // adding the sass middleware
-app.use(
-  sass.middleware({
-    src: __dirname + '/sass', 
-    dest: __dirname + '/public',
-    debug: true,       
-  })
-);   
+// app.use(
+//   sass.middleware({
+//     src: __dirname + '/sass', 
+//     dest: __dirname + '/public',
+//     debug: true,       
+//   })
+// );   
 
 app.use(serveStatic(__dirname + "/dist"));
 
