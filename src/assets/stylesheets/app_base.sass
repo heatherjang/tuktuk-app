@@ -1,0 +1,57 @@
+html
+  background-color: $theme-color-dark
+body
+  position: relative
+
+// -- Background elements -----------
+.bg-el-container
+  height: 100vh
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  overflow: hidden
+  div
+    background-color: rgba(#fff, 0.05)
+    width: 30%
+    height: 30%
+    position: absolute
+    +border-radius(40px)
+    &.bg-el-sm
+      +border-radius(24px)
+      height: 10%
+      width: 10%
+    &#bg-el-1
+      +transform(rotate(130deg))
+      top: 10%
+      right: -8%
+    &#bg-el-2
+      +transform(rotate(10deg))
+      width: 50%
+      height: 50%
+      bottom: -10%
+      left: -18%
+    &#bg-el-3
+      @extend .bg-el-sm
+      +transform(rotate(30deg))
+      top: 5%
+      right: 40%
+    &#bg-el-4
+      width: 25%
+      height: 25%
+      +transform(rotate(160deg))
+    &#bg-el-5
+      +transform(rotate(160deg))
+      height: 55%
+      width: 55%
+      bottom: -20%
+      right: -15%
+    &#bg-el-6
+      width: 40%
+      height: 40%
+      +transform(rotate(25deg))
+      top: 20%
+      right: 30%
+
+

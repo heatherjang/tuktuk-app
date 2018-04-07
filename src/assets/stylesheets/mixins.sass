@@ -1,0 +1,23 @@
+// == Mixins =========================
+
+// -- Fonts --------------------------
+$primary-font-family: 'Avenir', 'Arial', sans-serif
+$secondary-font-family: 'Walter Turncoat', cursive
+
+// -- Colours -----------------------
+$theme-color-dark: #001F20
+
+// -- Mixins ------------------------
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+  
+=transform($transformation)
+  -ms-transform: $transformation
+  -webkit-transform: $transformation
+  transform: $transformation
+
+=transition($transition)
+  -webkit-transition: $transition
+  transition: $transition

@@ -11,11 +11,11 @@ export default {
 </script>
 
 <style lang="sass">
-@import "./assets/stylesheets/reset.sass"
-$thing: red
-#app
-  font-family: 'Avenir'
-  color: $thing
+  @import "./assets/stylesheets/reset.sass"
+  // Mixins MUST be above all other stylesheets
+  @import "./assets/stylesheets/mixins.sass"
+  @import "./assets/stylesheets/typography.sass"
+  @import "./assets/stylesheets/app_base.sass"
 
 
 </style>

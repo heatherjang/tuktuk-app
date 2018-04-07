@@ -1,9 +1,10 @@
 <template>
   <div>
+    CONGRATULATIONS
   </div>
 </template>
 
-<script src="./landing.js"></script>
+<script src="./congratulations.js"></script>
 
 <style lang="sass" scoped>
 </style>

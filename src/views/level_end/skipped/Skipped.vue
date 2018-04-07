@@ -1,9 +1,10 @@
 <template>
   <div>
+    SKIPPED
   </div>
 </template>
 
-<script src="./landing.js"></script>
+<script src="./skipped.js"></script>
 
 <style lang="sass" scoped>
 </style>

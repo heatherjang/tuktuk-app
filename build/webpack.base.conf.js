@@ -53,7 +53,13 @@ module.exports = {
       },
       {
         test: /\.s[a|c]ss$/,
-        loader: 'style!css!sass'
+        loader: 'style!css!resolve-url!sass'
+
+
+  //         {
+  //   test: /\.scss$/,
+  //   loader: 'style!css!resolve-url!sass?sourceMap'
+  // },
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -81,11 +87,6 @@ module.exports = {
       }
     ]
   },
-  // vue: {
-  //   loaders: {
-  //     scss: 'style!css!sass'
-  //   }
-  // },
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).

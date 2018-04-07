@@ -1,9 +1,10 @@
 <template>
   <div>
+    HIGH SCORES
   </div>
 </template>
 
-<script src="./landing.js"></script>
+<script src="./high_scores.js"></script>
 
 <style lang="sass" scoped>
 </style>
