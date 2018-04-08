@@ -40,7 +40,7 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      // ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -54,12 +54,6 @@ module.exports = {
       {
         test: /\.s[a|c]ss$/,
         loader: 'style!css!resolve-url!sass'
-
-
-  //         {
-  //   test: /\.scss$/,
-  //   loader: 'style!css!resolve-url!sass?sourceMap'
-  // },
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

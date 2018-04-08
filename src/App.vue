@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view
+      :id="`${ pageId }_page`"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    pageId(){
+      return this.$store.state.route.name
+    }
+  }
 }
 </script>
 
@@ -16,6 +22,5 @@ export default {
   @import "./assets/stylesheets/mixins.sass"
   @import "./assets/stylesheets/typography.sass"
   @import "./assets/stylesheets/app_base.sass"
-
-
+  @import "./assets/stylesheets/sprites.sass"
 </style>
